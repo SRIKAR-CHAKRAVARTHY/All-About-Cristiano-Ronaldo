@@ -1,0 +1,173 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('cr4.jpg'); /* Background image for the entire site */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+/* Header Styles */
+header {
+    background: rgba(8, 1, 67, 0.308); /* Semi-transparent background for the header */
+    color: #fff;
+    padding: 9.5rem; /* Increased padding for a larger header */
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.header-left, .header-right {
+    position: absolute; /* Positioning images absolutely within the header */
+    width: 250px; /* Increased size for the images */
+    height: auto;
+    opacity: 1; /* 40% transparency (1 - 0.6 = 40%) */
+    z-index: 5; /* Ensure images are below header content */
+}
+
+.header-left {
+    left: 9%; /* Align left image to the left */
+    top: 38%; /* Vertically center the image */
+    transform: translateY(-50%); /* Adjust centering */
+}
+
+.header-right {
+    right: 0; /* Align right image to the right */
+    top: 50%; /* Vertically center the image */
+    transform: translateY(-50%); /* Adjust centering */
+}
+
+header h1 {
+    color: rgb(250, 244, 244); /* Ensures the heading text is visible */
+    font-size: 3em; /* Increased font size for the heading text */
+    margin: 0; /* Removes default margin */
+    text-align: center; /* Centers the heading text */
+    position: absolute; /* Allows for positioning adjustments */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjusts centering */
+    margin-left: 4em;
+}
+
+/* Navigation Styles */
+nav {
+    position: absolute; /* Positioning navigation within the header */
+    bottom: 1rem; /* Position from the bottom of the header */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjusts centering */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255); /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Font size */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 5rem; /* Increased padding for sections */
+    background: rgba(240, 235, 235, 0.669); /* Semi-transparent background for sections */
+    color: #333;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(8, 1, 67, 0.308); /* Semi-transparent background for the footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    color: white; /* Ensures the text is visible on the footer background */
+    text-align: center; /* Centers the text */
+    margin: 0; /* Removes default margin */
+    padding: 10px; /* Adds some padding */
+}
+
+/* Page-Specific Styles */
+.page-content-structure {
+    background-image: url('cr4.jpg'); /* Different background for this page */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the navigation items */
+    margin-left: 4em;
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: rgba(255, 255, 248, 0.963); /* Change link color for this page */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Adjust font size */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+section h2 {
+    margin-left: 4em; /* Moves the heading 4 tabs to the right */
+    color: #333; /* Adjust text color for section headings */
+    font-size: 2em; /* Font size for section headings */
+    text-align: left; /* Align headings to the left */
+}
+
+/* Back-to-Top Button Styles */
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position at the bottom right */
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(8, 1, 67, 0.8); /* Semi-transparent background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#backToTop:hover {
+    background-color: rgba(8, 1, 67, 1); /* Darker background on hover */
+}
